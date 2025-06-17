@@ -14,10 +14,10 @@ const imageSource = [ "https://picsum.photos/id/237/200/300",
   "https://picsum.photos/200/300.jpg"	
 ];
 function shuffleAndDisplayImages(){
-	const randomIndex = Math.floor(Math.random() * imageSource.length);
-	const duplicate = imageSource[randomIndex];
+	const duplicateIndex = Math.floor(Math.random() * imageSource.length);
+	const duplicateImage = imageSource[duplicateIndex];
 
-shuffledImages = [...imageSource, duplicate];
+shuffledImages = [...imageSource, duplicateImage];
 shuffledImages.sort(()=> Math.random() - 0.5);
 
 imageContainer.innerHTML = '';
